@@ -24,7 +24,7 @@ OPENAI_API_KEY = openai_api_key
 
 
 # Load the model and data
-llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
+llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0, openai_api_key = OPENAI_API_KEY)
 data = UnstructuredCSVLoader('final.csv')
 index = VectorstoreIndexCreator().from_loaders([data])
 
