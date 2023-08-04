@@ -2,3 +2,4 @@ langchain
 unstructured==0.9.0
 openai
 tiktoken
+chromadb
