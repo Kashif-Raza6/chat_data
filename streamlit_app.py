@@ -3,22 +3,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.indexes import VectorstoreIndexCreator
 import os
 
-# Load environment variables
-st.sidebar.markdown("### OpenAI API Key")
-openai_api_key = st.sidebar.text_input("Enter your OpenAI API key:", type="password")
-
-# Check if the API key starts with "sk-"
-if openai_api_key.strip().startswith("sk-"):
-    OPENAI_API_KEY = openai_api_key.strip()
-    # Configure OpenAI API
-    openai.api_key = OPENAI_API_KEY
-    proceed = True
-else:
-    proceed = False
-    st.sidebar.warning("OpenAI API key should start with 'sk-'")
-
-OPENAI_API_KEY = openai_api_key
-
 
 # Load the model and data
 llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
