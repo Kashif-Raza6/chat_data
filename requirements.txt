@@ -1,6 +1,6 @@
 langchain
 openai
-chromadb
+chromadb==0.3.26
 unstructured==0.9.0
 
 
