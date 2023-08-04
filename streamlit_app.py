@@ -4,7 +4,6 @@ import streamlit as st
 from langchain.document_loaders import UnstructuredCSVLoader
 from langchain.chat_models import ChatOpenAI
 from langchain.indexes import VectorstoreIndexCreator
-from dotenv import load_dotenv
 
 # Load environment variables
 st.sidebar.markdown("### OpenAI API Key")
