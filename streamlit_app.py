@@ -1,5 +1,6 @@
 # streamlit_app.py
 
+import openai
 import streamlit as st
 from langchain.document_loaders import UnstructuredCSVLoader
 from langchain.chat_models import ChatOpenAI
