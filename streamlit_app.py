@@ -15,7 +15,7 @@ import os
 def main():
     openai_api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
     if openai_api_key !=None:
-        os.enviorn['OPENAI_API_KEY']= openai_api_key
+        os.environ['OPENAI_API_KEY']= openai_api_key
         # Load the model and data
         llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
         data = UnstructuredCSVLoader('final.csv')
