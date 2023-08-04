@@ -30,7 +30,7 @@ def main():
 
             # Display the response
             st.markdown("### Response:")
-            st.write(response)
+            st.success(f"Result: {response}")
 
 if __name__ == "__main__":
     main()
