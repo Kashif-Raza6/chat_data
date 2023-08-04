@@ -1,5 +1,6 @@
 langchain
-unstructured==0.9.0
 openai
-tiktoken
 chromadb
+unstructured==0.9.0
+
+
