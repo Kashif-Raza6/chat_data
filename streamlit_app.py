@@ -15,9 +15,6 @@ def main():
     st.title("LangChain Chat App")
     st.write("Enter your query in the text box below and press Enter.")
 
-    # Get user input
-    question = st.text_input('Enter your query:', '')
-
     # Load the model and data
     llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
     data = UnstructuredCSVLoader('final.csv')
