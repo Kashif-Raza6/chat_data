@@ -22,8 +22,6 @@ def main():
     llm = ChatOpenAI(model="gpt-3.5-turbo", temperature=0)
     data = UnstructuredCSVLoader('final.csv')
     index = VectorstoreIndexCreator().from_loaders([data])
-    st.title("LangChain Chat with your Data App")
-    st.write("Enter your query in the text box below and press Enter.")
 
     # Get user input
     question = st.text_input('Enter your query:', '')
